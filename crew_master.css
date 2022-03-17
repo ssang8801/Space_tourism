@@ -1,0 +1,165 @@
+
+*{
+  margin:0;
+  padding:0;
+  font-family:sans-serif;
+}
+body{
+  background-image: url("./assets/crew/background-crew-desktop.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  color: white;
+}
+
+
+.navbar{
+  display: flex;
+  width: 90%;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  margin-top: 40px;
+}
+.bardiv{
+  display: flex;
+  backdrop-filter: blur(10px);
+  width: 50%;
+  text-align: center;
+  height: 100px;
+  align-items: center;
+}
+
+hr{
+  border-bottom: 0;
+  border-right: 0;
+  border-left: 0;
+  border-top: 1px dotted gray;
+  width: 30%;
+}
+
+.navbar ul{
+  margin: auto;
+
+}
+
+.navbar li{
+  display: inline-block;
+  list-style: none;
+  color: white;
+  padding: 0 20px;
+  position: relative;
+}
+
+.navbar li::after{
+  content: "";
+  height: 2px;
+  background-color: white;
+  width: 0;
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+}
+
+
+.navbar li:hover::after{
+  width: 100%;
+}
+
+.content{
+  height: 100vh;
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  align-items:  center;
+  text-align: center;
+  margin: auto;
+}
+@media (max-width: 900px){
+  .content{
+    display: block;
+  }
+  h2{
+    font-size: 0;
+  }
+  p{
+    font-size:0;
+  }
+}
+h1{
+  font-size: 10rem;
+  font-weight:normal;
+  letter-spacing: 3px;
+}
+
+h2{
+  font-weight: normal;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  text-align: center;
+  letter-spacing: 3px;
+}
+
+p{
+  padding-top: 4rem;
+  letter-spacing: 2px;
+}
+.navbar .home::after{
+  content: "";
+  height: 2px;
+  background-color: white;
+  width:100%;
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+}
+
+.left{
+  width: 35%;
+}
+
+.right{
+  width: 50%;
+  text-align: center;
+}
+
+.left a{
+  text-decoration: none;
+
+}
+.left li{
+  color: white;
+  letter-spacing: 2px;
+  list-style: none;
+  line-height: 35px;
+  position: relative
+}
+
+.left li::after{
+  content: "";
+  height: 1px;
+  background-color: white;
+  width: 0;
+  position: absolute;
+  bottom: 5px;
+  left: 33%;
+}
+
+.left li:hover::after{
+  width: 33%;
+}
+
+.content .left .home2{
+  font-weight: bold;
+}
+
+.content .left .home2::after{
+  content: "";
+  height: 1px;
+  background-color: white;
+  width: 33%;
+  position: absolute;
+  bottom: 5px;
+  left: 33%;
+}
